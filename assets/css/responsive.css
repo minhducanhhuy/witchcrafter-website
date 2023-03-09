@@ -1,0 +1,125 @@
+/* PC  >= 1024px */ 
+@media (min-width: 64em) {
+
+}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
+	#nav .subnav a {
+		padding: 5px 12px;
+	}
+
+	.contact-info {
+		line-height: 1.7;
+	}
+
+	#footer .social-list {
+		font-size: 42px;
+		margin: 0px 8px;
+	}
+
+	#footer .copyright {
+		padding: 12px 0;
+		display: inline-block;
+	}
+}
+
+/* Tablet  >= 740px && < 1024px*/
+@media ((min-width: 46.25em) and (max-width: 63.9375em)) {
+	
+}
+
+/* Mobile < 740px  */
+@media (max-width: 46.1875em) {
+	.s-full-width {
+		width : 100% !important;
+	}
+
+	.s-mt-8 {
+		margin-top: 8px;
+	}
+
+	.mobile-col-full {
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	#header {
+		overflow: hidden;
+	}
+
+	#header .search-btn {
+		display: none;
+	}
+
+	#header .mobile-menu-btn {
+		float: right;
+		padding: 0 24px;
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	#header .ti-menu {
+		color: #fff;
+		font-size: 20px;
+		line-height: 46px;
+
+	}
+
+	#header .mobile-menu-btn:hover,
+	#header .mobile-menu-btn:hover i {
+		background-color: #ccc;
+		color: #000;
+	}
+
+	#nav {
+		display: block;
+	}
+
+	#nav > li {
+		display: block;
+	}
+
+	#nav > li:first-child {
+		display: inline-block;
+	}
+
+	#nav .subnav {
+		position: initial;
+		background-color: #333;
+	}
+
+	#nav .subnav a {
+		color: #fff;
+		padding: 5px 41px;
+	}
+
+	#mobile-menu {
+		display: block;
+	}
+
+	#content .content-section {
+		width: 100%;
+	}
+	
+	#content .member-item {
+		width: 100%;
+	}
+
+	#content .member-img {
+		width: 100%;
+		height: 90%;
+	}
+
+	#content .place-item {
+		width: 100%;
+		margin-top: 16px;
+	}
+
+	.contact-form {
+		margin-top: 32px;
+	}
+}

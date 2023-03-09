@@ -1,0 +1,605 @@
+/* Reset CSS */
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+1. Vị Trí
+2. Kích thước (width, heigh)
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, hình tròn, vuông, ...)
+*/
+/* Common */
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px; 
+    border: none; 
+	text-align: center;
+}
+
+/* Main */
+#main {
+
+}
+
+/* Header */
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+}
+
+#nav li a {
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    background-color: #ccc;
+    color: #000;
+    display: block;
+  
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top : 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+    min-width: 160px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 24px;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+   
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    color: #fff;
+}
+
+#mobile-menu {
+	display: none;
+}
+
+/* Slider */
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../img/Slider/Slider_3.png') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    color: rgba(0, 68, 255, 0.904);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+#slider .text-description {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+/* Content */
+
+#content {
+
+}
+
+#content .content-section {
+    width : 800px;
+    padding: 64px 16px 112px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+    
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member-list {
+    margin-top: 48px;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+#content .member-item {
+    height: 520px; 
+    vertical-align: top;
+    text-align: center;
+}
+
+#content .member-img {
+    width: 100%;
+    height: 90%;
+    background-color: #3e3e3e;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.member-img-1 {
+	background-image: url('../img/Team/Member_private/witchcrafter_Edel_1.png');
+}
+
+.member-img-1:hover {
+	background-image: url('../img/Team/Member_private/witchcrafter_Edel_2.png');
+}
+
+.member-img-2 {
+	background-image: url('../img/Team/Member_private/Witchcrafter_Golem.Aruru_1.png');
+}
+
+.member-img-2:hover {
+	background-image: url('../img/Team/Member_private/Witchcrafter_Golem.Aruru_2.png');
+}
+
+.member-img-3 {
+	background-image: url('../img/Team/Member_private/Witchcrafter_Haine_1.png');
+}
+
+.member-img-3:hover {
+	background-image: url('../img/Team/Member_private/witchcrafter_Haine_2.png');
+}
+
+.member-img-4 {
+	background-image: url('../img/Team/Member_private/Witchcrafter_Pittor_1.png');
+}
+
+.member-img-4:hover {
+	background-image: url('../img/Team/Member_private/witchcrafter_Pittore_2.png');
+}
+
+.member-img-5 {
+	background-image: url('../img/Team/Member_private/Witchcrafter_Madame_Verre_1.png');
+}
+
+.member-img-5:hover {
+	background-image: url('../img/Team/Member_private/Witchcrafter_Madame_Verre_2.png');
+}
+
+.member-img-6 {
+	background-image: url('../img/Team/Member_private/Witchcrafter_Potterie_1.png');
+}
+
+.member-img-6:hover {
+	background-image: url('../img/Team/Member_private/witchcrafter_Potterie_2.png');
+}
+
+.member-img-7 {
+	background-image: url('../img/Team/Member_private/Witchcrafter_Genni_1.png');
+}
+
+.member-img-7:hover {
+	background-image: url('../img/Team/Member_private/Witchcrafter_Genni_2.png');
+}
+
+.member-img-8 {
+	background-image: url('../img/Team/Member_private/Witchcrafter_Schmietta_1.png');
+}
+
+.member-img-8:hover {
+	background-image: url('../img/Team/Member_private/Witchcrafter_Schmietta_2.png');
+}
+
+
+#content .member-name {
+    text-align: center;
+    color: rgb(31, 206, 218);
+    font-size: 15px;
+    font-weight: bolder;
+    padding-bottom: 5px ;   
+}
+
+#content .tour-section {
+    background-color: #000;
+}
+
+#content .tickets-list {
+    list-style-type: none;
+    background-color: #fff;
+    margin-top: 40px;
+
+}
+
+#content .tickets-list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+#content .tickets-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+#content .tickets-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+#content .place-list {
+    margin-top: 32px;
+    height: auto;
+}
+
+#content .place-item {
+    float: left;
+    vertical-align: top;
+    padding-bottom: 16px;
+}
+
+#content .place-img {
+    width: 100%;
+    height: 370px;
+    background-color: #3e3e3e;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#content .place-img:hover {
+    opacity: 0.6;
+}
+
+#content .place-body {
+    padding: 16px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+#content .place-heading {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#content .place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+#content .place-description {
+    margin-top: 15px;    
+    line-height: 1.4;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+} 
+
+/* Contact from */
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info a {
+	color: #101aef;
+	opacity: 0.8;
+}
+
+.contact-info a:hover {
+	opacity: 1.2;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 11px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline-color: #0f84e4;
+}
+
+.contact-form .form-submit-btn input {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding : 10px 16px;
+    float: right;
+}
+
+/* Background Section */
+
+.background-section img {
+    width: 100%;
+
+}
+
+/* Footer */
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .copyright a:hover,
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright a,
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+/* modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal.close {
+    display: none;
+}
+
+.modal .modal-container {
+    background: #fff;
+    width: 900px;
+    max-width: calc(100% - 60px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.4s;
+}
+
+.modal .modal-header {
+    background: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal-close:hover {
+    opacity: 1.4;
+}
+
+.modal-heading-icon {
+    margin-right: 16px;
+    
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+#buy-tickets {
+    background-color: #009688;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px;
+    cursor: pointer;
+    border: 0px;
+}
+
+#buy-tickets:hover {
+    opacity: 0.8;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #2196F3;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
